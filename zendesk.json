@@ -1,0 +1,18 @@
+{
+  "event": "ticket",
+  "url": "https://{some_domain}.zendesk.com/api/v2/tickets.json",
+  "requestType": "POST",
+  "auth": {
+    "email_address": "{some_email_address}",
+    "Authorization": "Bearer some_token"
+  },
+  "json": {
+      "ticket": {
+        "subject": "My printer is on fire!",
+           "comment": {
+              "body": "The smoke is very colorful."
+            }
+        }
+  }
+
+}
